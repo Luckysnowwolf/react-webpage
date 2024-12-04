@@ -1,0 +1,63 @@
+.Profile {
+    border: 1px solid rgb(black);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(black);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.Leopard {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.Profile2 {
+    border: 1px solid rgb(black);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(black);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.Whitefox {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.Profile3 {
+    border: 1px solid rgb(black);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(black);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.Wolves {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.cat {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.husky {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
