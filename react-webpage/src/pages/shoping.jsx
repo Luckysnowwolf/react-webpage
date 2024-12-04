@@ -5,6 +5,9 @@ function shoping() {
     const [Poster, setPoster] = useState(["wolfposter", "leopardposter", "foxposter", "huskyposter", "catposter"]);
 
     function handleAddPoster(index) {
+        const newPoster = document.getElementById("posterOption").value;
+        document.getElementById("posterOption").value = "";
+        
     }
     function handleRemovePoster(index) {
         setPoster(Poster.filter((_, i) => i !== index));
