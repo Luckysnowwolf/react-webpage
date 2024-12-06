@@ -3,10 +3,11 @@ import { useState } from "react";
 
 function shoping() {
     const [Poster, setPoster] = useState(["wolfposter", "leopardposter", "foxposter", "huskyposter", "catposter"]);
+    const [newTask, setNewTask] = useState([])
+
 
     function handleAddPoster(index) {
-        const newPoster = document.getElementById("posterOption").value;
-        document.getElementById("posterOption").value = "";
+        
         
     }
     function handleRemovePoster(index) {
@@ -34,11 +35,21 @@ function handleAmountOf() {
                     <li key={index} onClick={() => handleRemovePoster(index)}>{Poster}</li>
                 ))}
             </ul>
+            <ul class="options">
+                {Poster.map((Poster, index) => (
+                    <li key={index} onClick={() => handleRemovePoster(index)}>{Poster}</li>
+                ))}
+            </ul>
+            <ul class="options">
+                {Poster.map(newTask => (
+                    <li key={newTask.id}>{newTask.Poster}</li>
+                ))}
+            </ul>
             <input
              type="text" class="textzone" placeholder="enter poster animal..." id="posterOption"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}/>
-            <button class="add" onClick={() => handleAddPoster(index)}>add poster</button><button class="amount" onClick={handleAmountOf}>amount: {number}</button><button class="plus" onClick={increseNumber}>+</button><button class="remove" onClick={() => handleRemovePoster(index)}>remove poster</button>
+            <button class="add" onClick={() => handleAddPoster([...newTask, {id: nextId++, Poster: name }])}>add poster</button><button class="amount" onClick={handleAmountOf}>amount: {number}</button><button class="plus" onClick={increseNumber}>+</button><button class="remove" onClick={() => handleRemovePoster(index)}>remove poster</button>
         </div>
     );
 }
