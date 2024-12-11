@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 
 function shoping() {
     const [Poster, setPoster] = useState(["wolfposter", "leopardposter", "foxposter", "huskyposter", "catposter"]);
-    const [newTask, setNewTask] = useState([])
+    const [inputValue, setInputValue] = useState([])
 
 
-    function handleaddPoster() {
+    function handleAddPoster() {
         setPoster([...Poster, inputValue])
         setInputValue("");
 
@@ -34,21 +34,23 @@ function shoping() {
             <h2 className="Header"> list of posters</h2>
             <ul className="options">
                 {Poster.map((Poster, index) => (
-                    <li key={index} onClick={() => handleRemovePoster(index)}>{Poster}</li>
+                    <li key={index} onClick={() => handleRemovePoster(index)}>{Poster}
+            <button className="remove" onClick={() => handleRemovePoster(index)}>remove poster</button>
+                    </li>
                 ))}
             </ul>
             <ul className="options">
-                {newTask.map(poster => (
-                    <li key={poster.id}>{poster.Poster}</li>
+                {Poster.map((Poster, index) => (
+                    <li key={index}>{Poster}</li>
                 ))}
             </ul>
             <input
                 type="text" className="textzone"
                 placeholder="enter poster animal..." id="posterOption"
-                value={newTask}
-                onChange={(e) => setPoster(e.target.value)} />
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)} />
             <button className="add"
-                onClick={() => {setNewTask([...newTask, { id: nextId++, name: Poster }])}}>add poster</button>
+                onClick={handleAddPoster}>add poster</button>
             <button className="amount" onClick={handleAmountOf}>amount: {number}</button><button className="plus" onClick={increseNumber}>+</button><button className="remove" onClick={() => handleRemovePoster(index)}>remove poster</button>
         </div>
     );
