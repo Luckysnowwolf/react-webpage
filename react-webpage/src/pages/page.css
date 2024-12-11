@@ -1,3 +1,8 @@
+#root {
+    height: 100%;
+    width: 100%;
+}
+
 .Home {
     background-image: url("../assets/huskymainpage.png");
     background-size: cover;
@@ -8,89 +13,117 @@
     background-image: url("../assets/maincoon.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.end-headtext{
+
+.end-headtext {
     text-align: center;
     padding: 50px;
 }
-.end-text{
+
+.end-text {
     text-align: center;
     padding: 30%;
 }
-.buttons3{
-margin-left: 40%;
-padding: 20px;
-background-color: black;
-color: red;
-}
-.buttons2{
+
+.buttons3 {
+    margin-left: 40%;
     padding: 20px;
     background-color: black;
     color: red;
-    }
-    .buttons{
-        padding: 20px;
-        background-color: black;
-        color: red;
-        }
-.number{
-    color:crimson;
+}
+
+.buttons2 {
+    padding: 20px;
+    background-color: black;
+    color: red;
+}
+
+.buttons {
+    padding: 20px;
+    background-color: black;
+    color: red;
+}
+
+.number {
+    color: crimson;
     text-align: center;
     font-size: 75px;
 }
-.timer{ 
+
+.timer {
+    background-size: cover;
+    width: 250vh;
+    height: 250vh;
     background-color: black;
 }
-.Mid-text{
+
+.Mid-text {
     color: rgb(49, 6, 90);
 
 }
-.shopingSection{
+
+.shopingSection {
     width: 100%;
+    height: 100%;
     background-image: url("../assets/space.jpg");
     background-size: cover;
     padding: 50px;
 }
-.add{
-color: whitesmoke;
-background-image: url("../assets/spaceneb.jpg");
-border-radius: 30px;
-margin-bottom: 30px;
+.posterlist{
+    color: rgb(255, 255, 255);
+}
+.add {
+    padding: 5px;
+    color: whitesmoke;
+    background-image: url("../assets/spaceneb.jpg");
+    border-radius: 30px;
+    margin-bottom: 30px;
+
 
 }
-.amount{
+
+.amount {
+    padding: 5px;
     color: whitesmoke;
     background-image: url("../assets/spaceneb.jpg");
     border-radius: 30px;
     margin-bottom: 30px;
 }
-.remove{
-    color:whitesmoke;
+
+.remove {
+    padding: 5px;
+    color: whitesmoke;
     background-image: url("../assets/spaceneb.jpg");
     border-radius: 30px;
     margin-bottom: 30px;
 }
-.textzone{
-display: flex;
-padding: 5px;
-width: 20.2%;
-border-radius: 30px;
-background-image: url("../assets/spaceneb.jpg");
-color: rgb(255, 255, 255);
-}
-.Header{
-    color: rgb(250, 250, 250);
-}
-.options{
+
+.textzone {
+    display: flex;
+    padding: 1px;
+    width: 24%;
+    border-radius: 30px;
+    background-image: url("../assets/spaceneb.jpg");
     color: rgb(255, 255, 255);
 }
-.minus{
+
+.Header {
+    color: rgb(250, 250, 250);
+}
+
+.options {
+    color: rgb(255, 255, 255);
+}
+
+.minus {
     border-radius: 30px;
     color: rgb(255, 255, 255);
     background-image: url("../assets/spaceneb.jpg");
 }
-.plus{
+
+.plus {
+    padding: 2px;
     border-radius: 30px;
     color: rgb(255, 255, 255);
     background-image: url("../assets/spaceneb.jpg");

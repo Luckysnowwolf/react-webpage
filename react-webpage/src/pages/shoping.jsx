@@ -31,17 +31,13 @@ function shoping() {
     }
     return (
         <div className="shopingSection">
-            <h2 className="Header"> list of posters</h2>
+            <h2 className="Header"> list of posters to pick from</h2>
+            <p className="posterlist">wolfposter, leopardposter, foxposter, huskyposter,catposter</p>
             <ul className="options">
                 {Poster.map((Poster, index) => (
                     <li key={index} onClick={() => handleRemovePoster(index)}>{Poster}
             <button className="remove" onClick={() => handleRemovePoster(index)}>remove poster</button>
                     </li>
-                ))}
-            </ul>
-            <ul className="options">
-                {Poster.map((Poster, index) => (
-                    <li key={index}>{Poster}</li>
                 ))}
             </ul>
             <input

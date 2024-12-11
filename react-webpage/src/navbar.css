@@ -1,7 +1,6 @@
 .Navbar {
     background-image: url("./assets/winter.png");
     display: flex;
-    margin-bottom: 0px;
     background-size: 100% 200%;
     
 }
